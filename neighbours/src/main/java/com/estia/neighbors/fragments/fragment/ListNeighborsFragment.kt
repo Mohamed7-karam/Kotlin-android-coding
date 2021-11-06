@@ -1,4 +1,4 @@
-package com.estia.neighbors.fragments
+package com.estia.neighbors.fragments.fragment
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -9,15 +9,18 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.estia.neighbors.fragments.NavigationListener
 import com.estia.neighbors.fragments.adapters.ListNeighborHandler
 import com.estia.neighbors.fragments.adapters.ListNeighborsAdapter
 import com.estia.neighbors.fragments.data.NeighborRepository
 import com.estia.neighbors.fragments.data.service.DummyNeighborApiService
 import com.estia.neighbors.fragments.models.Neighbor
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.hkaram.neighbours.R
 
 class ListNeighborsFragment : Fragment(), ListNeighborHandler {
     private lateinit var recyclerView: RecyclerView
+    private lateinit var addNeighbor: FloatingActionButton
 
 
 
@@ -27,6 +30,11 @@ class ListNeighborsFragment : Fragment(), ListNeighborHandler {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.list_neighbors_fragment, container, false)
+
+        (activity as? NavigationListener)?.updateTitle(R.string.list_neighbor_toolbar_name)
+
+
+
         recyclerView = view.findViewById(R.id.neighbors_list)
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.addItemDecoration(
@@ -35,6 +43,10 @@ class ListNeighborsFragment : Fragment(), ListNeighborHandler {
                 DividerItemDecoration.VERTICAL
             )
         )
+        addNeighbor = view.findViewById(R.id.add_button)
+        addNeighbor.setOnClickListener {
+            (activity as? NavigationListener)?.showFragment(AddNeighbourFragment())
+        }
         return view
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -66,6 +78,8 @@ class ListNeighborsFragment : Fragment(), ListNeighborHandler {
         val adapter = ListNeighborsAdapter(neighbors, this)
         recyclerView.adapter = adapter
     }
+
+
 
 
 }

@@ -3,4 +3,18 @@
     <string name="dialog_title">Confirmation</string>
     <string name="oui">YES</string>
     <string name="non">no</string>
+    <string name="hint_image">name</string>
+    <string name="hint_name">name</string>
+    <string name="email_helper_text">email</string>
+    <string name="hint_address">email</string>
+    <string name="phone_helper_text">06600900160</string>
+    <string name="hint_phone">phone</string>
+    <string name="hint_website">website</string>
+    <string name="hint_about_me">about me</string>
+    <string name="button_save">save</string>
+    <string name="photo_profil">Photo de profil</string>
+    <string name="add_neighbor">Add neighbor</string>
+    <string name="photo_de_profil">photo de profil</string>
+    <string name="add_neighbour_toolbar_name">add neighbour</string>
+    <string name="list_neighbor_toolbar_name">list neighbor</string>
 </resources>

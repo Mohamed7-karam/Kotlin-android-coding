@@ -15,7 +15,8 @@ class DummyNeighborApiService : NeighborApiService {
     }
 
     override fun createNeighbour(neighbor: Neighbor) {
-        TODO("Not yet implemented")
+        DUMMY_NeighborS.add(neighbor)
+
     }
 
     override fun updateFavoriteStatus(neighbor: Neighbor) {

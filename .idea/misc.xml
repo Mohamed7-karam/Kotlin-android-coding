@@ -8,8 +8,10 @@
         <entry key="..\:/Users/m.hoummani/AndroidStudioProjects/TP11/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/m.hoummani/AndroidStudioProjects/TP11/app/src/main/res/layout/compute_activity.xml" value="0.1" />
         <entry key="..\:/Users/m.hoummani/AndroidStudioProjects/TP11/neighbours/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2657407407407407" />
+        <entry key="..\:/Users/m.hoummani/AndroidStudioProjects/TP11/neighbours/src/main/res/drawable/ic_baseline_person_add_24.xml" value="0.1546875" />
         <entry key="..\:/Users/m.hoummani/AndroidStudioProjects/TP11/neighbours/src/main/res/layout/activity_main.xml" value="0.12360688956433637" />
-        <entry key="..\:/Users/m.hoummani/AndroidStudioProjects/TP11/neighbours/src/main/res/layout/list_neighbors_fragment.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/m.hoummani/AndroidStudioProjects/TP11/neighbours/src/main/res/layout/add_neighbor.xml" value="0.32281553398058255" />
+        <entry key="..\:/Users/m.hoummani/AndroidStudioProjects/TP11/neighbours/src/main/res/layout/list_neighbors_fragment.xml" value="0.33" />
         <entry key="..\:/Users/m.hoummani/AndroidStudioProjects/TP11/neighbours/src/main/res/layout/neighbor_item.xml" value="0.12360688956433637" />
       </map>
     </option>
